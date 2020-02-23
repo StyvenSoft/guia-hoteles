@@ -7,3 +7,6 @@
 a {
     color: var(--white);
 }
+.breadcrumb-color{
+    color: var(--dark);
+}
