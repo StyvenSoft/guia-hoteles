@@ -6,6 +6,10 @@
 - Lección 1: Bienvenida a Bootstrap 4.0 y el desarrollo de UI
 - Lección 3: Comenzando un proyecto (Guía Hoteles)
 
+```sh
+$ npm install open-iconic --save
+```
+
 # Autoevaluación del Módulo 1
 
 - **Pregunta 1 ¿Qué es la arquitectura de un proyecto?**
