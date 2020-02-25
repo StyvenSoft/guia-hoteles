@@ -5,10 +5,10 @@
     margin-top: 50px;
 }
 a {
-    color: var(--white);
+    color: var(--gray);
 }
-.breadcrumb-color{
-    color: var(--dark);
+.page-footer a{
+    color: var(--white);
 }
 .btn-primary{
     border: 0;

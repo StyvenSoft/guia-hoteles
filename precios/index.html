@@ -48,74 +48,112 @@
           <li class="breadcrumb-item active" aria-current="page">Precios</li>
         </ol>
       </nav>
-    <div class="table-responsive">
-      <table class="table table-striped">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">Calidad</th>
-            <th scope="col">Barcelona</th>
-            <th scope="col">Buenos Aires</th>
-            <th scope="col">Lima</th>
-            <th scope="col">Río de Janeiro</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row"><span class="oi oi-star"></span></th>
-            <td>$100</td>
-            <td>$120</td>
-            <td>$150</td>
-            <td>$180</td>
-          </tr>
-          <tr>
-            <th scope="row">
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-            </th>
-            <td>$200</td>
-            <td>$220</td>
-            <td>$250</td>
-            <td>$280</td>
-          </tr>
-          <tr>
-            <th scope="row">
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-            </th>
-            <td>$300</td>
-            <td>$320</td>
-            <td>$350</td>
-            <td>$380</td>
-          </tr>
-          <tr>
-            <th scope="row">
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-            </th>
-            <td>$400</td>
-            <td>$420</td>
-            <td>$450</td>
-            <td>$480</td>
-          </tr>
-          <tr>
-            <th scope="row">
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-              <span class="oi oi-star"></span>
-            </th>
-            <td>$500</td>
-            <td>$520</td>
-            <td>$550</td>
-            <td>$580</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" href="#compara" id="compara-tap" data-toggle="tab">Comparar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tarjetas"  id="tarjetas-tap" data-toggle="tab">Tarjetas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#comentarios"  id="comentarios-tap" data-toggle="tab">Comentarios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" >Ayuda</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Calidad</th>
+                  <th scope="col">Barcelona</th>
+                  <th scope="col">Buenos Aires</th>
+                  <th scope="col">Lima</th>
+                  <th scope="col">Río de Janeiro</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><span class="oi oi-star"></span></th>
+                  <td>$100</td>
+                  <td>$120</td>
+                  <td>$150</td>
+                  <td>$180</td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                  </th>
+                  <td>$200</td>
+                  <td>$220</td>
+                  <td>$250</td>
+                  <td>$280</td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                  </th>
+                  <td>$300</td>
+                  <td>$320</td>
+                  <td>$350</td>
+                  <td>$380</td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                  </th>
+                  <td>$400</td>
+                  <td>$420</td>
+                  <td>$450</td>
+                  <td>$480</td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                  </th>
+                  <td>$500</td>
+                  <td>$520</td>
+                  <td>$550</td>
+                  <td>$580</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+          <ul class="list-group">
+            <li class="list-group-item active text-center font-weight-bold">Tarjetas aceptadas</li>
+            <li class="list-group-item">Tarjeta básica</li>
+            <li class="list-group-item">Tarjeta credito / debito</li>
+            <li class="list-group-item">Tarjeta VIP</li>
+            <li class="list-group-item">Tarjeta black</li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+          <div class="media my-4">
+            <img src="../img/unnamed.jpg" class="mr-3" alt="...">
+            <div class="media-body">
+              <h5 class="mt-0">Media heading</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
     <footer class="page-footer font-small mdb-color pt-4">
 
