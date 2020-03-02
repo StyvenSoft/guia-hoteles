@@ -5,32 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
     <title>Guía hoteles</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <!-- Navbar content -->
-      <a class="navbar-brand" href="#"><span class="oi oi-home"></span> Home</a>
+      <a class="navbar-brand" href="../"><span class="oi oi-home"></span> Home</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="./nosotros/">Nosotros <span class="sr-only">(current)</span></a>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./precios/">Precios</a>
+            <a class="nav-link" href="../precios/">Precios</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Términos y condiciones</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./contacto"><span class="oi oi-people"></span> Contacto</a>
+            <a class="nav-link" href="../contacto/"><span class="oi oi-people"></span> Contacto</a>
           </li>
         </ul>
       </div>
@@ -42,89 +42,59 @@
       </div>
     </div>
     <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <p>
-            <h3>¿Cómo funciona?</h3>
-            <p>Buscá los hoteles deacuerdo a tu preferencia y ubicación</p>
-          </p>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a class="breadcrumb-color" href="../">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Sobre nosotros</li>
+        </ol>
+      </nav>
+      
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                ¿Quiénes somos?
+              </button>
+            </h5>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
         </div>
-        <div class="col-sm-4">
-          <p>
-            <h3>¿Dónde puede reservar?</h3>
-            <p>Elíge la ciudad que te interese y luego realiza la reserva</p>
-          </p>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Nuestra misión
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
         </div>
-        <div class="col-sm-4">
-          <p>
-            <h3>¿Cómo pago?</h3>
-            <p>Utiliza tu tarjeta de credito farovita para poder realizar tu pago.</p>
-          </p>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Nuestros valores
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
         </div>
       </div>
 
-      <p>
-        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-          Servicio al cliente
-        </a>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExampleTwo" aria-expanded="false" aria-controls="collapseExample">
-          Acerca de nosotros
-        </button>
-      </p>
-      <div class="collapse" id="collapseExample">
-        <div class="card card-body">
-          Puedes cambiar o cancelar tu reservación de hospedaje en línea, llamando a nuestro número de servicio al cliente 01-800-594-588.
-        </div>
-      </div>
-      <div class="collapse" id="collapseExampleTwo">
-        <div class="card card-body">
-          Somos una agencia de hoteles que elige cuidadosamente sólo a los proveedores más calificados y de prestigio para brindar el mejor servicio.
-        </div>
-      </div>
-
-      <hr class="my-4">
-        <div class="row my-5 card-deck">
-          <div class="col-md-3 mb-5">
-            <div class="card">
-              <img class="card-img-top" src="./img/images1.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Hotel Barcelona</h5>
-                <p class="card-text">Hotel ubicado en pleno centro de la ciudad de Barcelona</p>
-              </div>
-              <button class="btn-primary"><span class="oi oi-tag"></span> Reservar</button>
-            </div>
-          </div>
-          <div class="col-md-3 mb-5">
-            <div class="card">
-              <img class="card-img-top" src="./img/images2.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Hotel Buenos Aires</h5>
-                <p class="card-text">Hotel ubicado en pleno centro de la ciudad de Buenos Aires</p>
-              </div>
-              <button class="btn-primary"><span class="oi oi-tag"></span> Reservar</button>
-            </div>
-          </div>
-          <div class="col-md-3 mb-5">
-            <div class="card">
-              <img class="card-img-top" src="./img/images3.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Hotel Lima</h5>
-                <p class="card-text">Hotel ubicado en pleno centro de la ciudad de Lima</p>
-              </div>
-              <button class="btn-primary"><span class="oi oi-tag"></span> Reservar</button>
-            </div>
-          </div>
-          <div class="col-md-3 mb-5">
-            <div class="card">
-              <img class="card-img-top" src="./img/images4.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Hotel Río de Janeiro</h5>
-                <p class="card-text">Hotel ubicado en pleno centro de Río de Janeiro</p>
-              </div>
-              <button class="btn-primary"><span class="oi oi-tag"></span> Reservar</button>
-            </div>
-          </div>
-        </div>
     </div>
     <footer class="page-footer font-small mdb-color pt-4">
 
@@ -176,7 +146,7 @@
               <a href="#!">Shipping Rates</a>
             </p>
             <p>
-              <a href="#!">Help</a>
+              <span class="iconic iconic-envelope-closed iconic-sm" title="envelope closed" aria-hidden="true"></span><a href="#!">Help</a>
             </p>
           </div>
     
@@ -254,8 +224,8 @@
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
